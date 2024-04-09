@@ -12,6 +12,12 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
   const [success, setSuccess] = useState(false);
 
+  let a = 2;
+  let b = 3; 
+  function name(a, b) {
+    return a + b;
+  }
+  console.log(name(2, 3))
   useEffect(() => {
     fetch('https://reqres.in/api/users')
       .then(res => res.json())
